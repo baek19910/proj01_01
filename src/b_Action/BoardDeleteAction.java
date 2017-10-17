@@ -20,32 +20,30 @@ public class BoardDeleteAction implements Action {
     	String pass =request.getParameter("B_pw");
     	
     	
-    	if (request.getParameter("pass") != null) {
+    	if (pass != null) {
     		//비번을 입력을 해서 세션에 있는 pass 비교요청
-    		String inPass = request.getParameter("pass");
     		
     		 BoardDAO bMgr=new BoardDAO();
     	   	  BoardBean bean = bMgr.getBoard(num);//게시물 가져오기
     	   	  
     		String dbPass = bean.getPass();
-    		
-    		if (inPass.equals(dbPass)) {
+    		if (pass.equals(dbPass)) {
     			bMgr.deleteBoard(num);
     			  response.setContentType("text/html;charset=UTF-8");
     	             PrintWriter out=response.getWriter();
     	             out.println("<script>");
     	             out.println("alert('삭제가 완료 되었습니다.');");
-    	             out.println("location.href='./BoardList.bo?nowPage=" + nowPage);
+    	             out.println("location.href='./BoardListAction.bo';");
     	             out.println("</script>");
     	             out.close();
-    			//String url = "./BoardList.bo?nowPage=" + nowPage;//이게 멀까?? ㅠㅠ
+    			//String url = "./BoardListAction.bo?nowPage=" + nowPage;//이게 멀까?? ㅠㅠ
     			//response.sendRedirect(url);
     		} else {
              response.setContentType("text/html;charset=UTF-8");
              PrintWriter out=response.getWriter();
              out.println("<script>");
              out.println("alert('삭제할 권한이 없습니다.');");
-             out.println("location.href='./BoardList.bo';");
+             out.println("location.href='./BoardListAction.bo';");
              out.println("</script>");
              out.close();
              return null;
@@ -57,7 +55,7 @@ public class BoardDeleteAction implements Action {
            
          System.out.println("게시판 삭제 성공");
          forward.setRedirect(true);
-        forward.setPath("./BoardList.bo");
+        forward.setPath("./BoardListAction.bo");
         return forward;
      }
 }

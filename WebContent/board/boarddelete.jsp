@@ -47,7 +47,7 @@ request.setCharacterEncoding("UTF-8");
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-lg-12">
-								<form id="B_delete" action="/proj_01_01/BoardDeleteAction.bo" method="post" role="form" style="display: block;">
+								<form id="B_delete" action="/proj_01_02/BoardDeleteAction.bo" method="post" role="form" style="display: block;">
 									<div class="form-group">
 										<input type="password" name="B_pw" id="B_pw" tabindex="2" class="form-control" placeholder="PW">
 									</div>

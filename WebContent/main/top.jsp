@@ -46,9 +46,9 @@ for (int i = 0; i < vlist.size(); i++) {
 <meta name="viewport" content="width=device-width"  initial-scale="1" >
 <title>코딩연습</title>
 
-<link rel="stylesheet" href="/proj_01_01/boot/css/bootstrap.css">
-<link rel="stylesheet" href="/proj_01_01/boot/css/top.css">
-<link rel="stylesheet" href="/proj_01_01/boot/css/login.css">
+<link rel="stylesheet" href="/proj_01_02/boot/css/bootstrap.css">
+<link rel="stylesheet" href="/proj_01_02/boot/css/top.css">
+<link rel="stylesheet" href="/proj_01_02/boot/css/login.css">
 <style>
 #logout{
 margin-top: 15px;
@@ -58,8 +58,8 @@ padding: 0px;
 </head>
 <body>
 
-<script src="/proj_01_01/boot/js/jquery-3.2.1.min.js"></script>
-<script src="/proj_01_01/boot/js/bootstrap.js"></script>
+<script src="/proj_01_02/boot/js/jquery-3.2.1.min.js"></script>
+<script src="/proj_01_02/boot/js/bootstrap.js"></script>
 
 <script type="text/javascript">
 //------------로그인 부트스트랩 모달창 띄우는 소스 -----------------------
@@ -84,7 +84,7 @@ $(document).ready(function(){
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="/proj_01_01/main/main.jsp">B.gahui</a>
+	      <a class="navbar-brand" href="/proj_01_02/main/main.jsp">B.gahui</a>
 	    </div>
 	     <div class="navbar-collapse collapse" id="navbar-collapse-1">
 	      <ul class="nav navbar-nav">
@@ -96,7 +96,7 @@ $(document).ready(function(){
 		  
 		  <ul class="dropdown-menu" role="menu">
 		    <li><a href="#">공지사항</a></li>
-		    <li><a href="/proj_01_01/BoardListAction.bo">자유게시판</a></li>
+		    <li><a href="/proj_01_02/BoardListAction.bo">자유게시판</a></li>
 		    <li><a href="#">갤러리게시판</a></li>
 		  </ul>
 		</li>
@@ -114,7 +114,7 @@ $(document).ready(function(){
 		  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">접속하기 <span class="caret"></span></a>
 		  <ul class="dropdown-menu" role="menu">
 		    <li><a id="mylogin" data-toggle="modal">로그인</a></li>
-		    <li><a href="/proj_01_01/user/member.jsp">회원가입</a></li>
+		    <li><a href="/proj_01_02/user/member.jsp">회원가입</a></li>
 		  </ul>
 		</li>
 	      </ul>
@@ -136,7 +136,7 @@ else if(S_id != null){%><!-- 세션에 id값이 있으면 실행 -->
 		<span class="icon-bar"></span>
 		<span class="icon-bar"></span>
 	      </button>
-	      <a class="navbar-brand" href="/proj_01_01/main/main.jsp">B.gahui</a>
+	      <a class="navbar-brand" href="/proj_01_02/main/main.jsp">B.gahui</a>
 	    </div>
 	     <div class="navbar-collapse collapse" id="navbar-collapse-1">
 	      <ul class="nav navbar-nav">
@@ -148,7 +148,7 @@ else if(S_id != null){%><!-- 세션에 id값이 있으면 실행 -->
 		  
 		  <ul class="dropdown-menu" role="menu">
 		    <li><a href="#">공지사항</a></li>
-		    <li><a href="/proj_01_01/BoardListAction.bo">자유게시판</a></li>
+		    <li><a href="/proj_01_02/BoardListAction.bo">자유게시판</a></li>
 		    <li><a href="#">갤러리게시판</a></li>
 		  </ul>
 		</li>
@@ -166,7 +166,7 @@ else if(S_id != null){%><!-- 세션에 id값이 있으면 실행 -->
 	       <%=nickname %>님 환영합니다.
             </li>
 		<li style="text-align: center;">
-		<form action="/proj_01_01/ULogoutS" method="post">
+		<form action="/proj_01_02/ULogoutS" method="post">
 		<input type="hidden" name="L_id" value=<%= S_id %>>
 		<input type="hidden" name="L_id" value=<%= S_pw %>>
 		<button  type="submit" class="btn btn-link"  id="logout">로그아웃</button>
@@ -175,7 +175,7 @@ else if(S_id != null){%><!-- 세션에 id값이 있으면 실행 -->
 		<li>
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">메뉴 <span class="caret"></span></a>
 		  <ul class="dropdown-menu" role="menu">
-		    <li><a href="/proj_01_01/user/mypage.jsp">마이페이지</a></li>
+		    <li><a href="/proj_01_02/user/mypage.jsp">마이페이지</a></li>
 		  </ul>
 		</li>
 	      </ul>
@@ -190,7 +190,7 @@ else if(S_id != null){%><!-- 세션에 id값이 있으면 실행 -->
 	       <%=nickname %>님 환영합니다.
             </li>
 		<li style="text-align: center;">
-		<form action="/proj_01_01/ULogoutS" method="post">
+		<form action="/proj_01_02/ULogoutS" method="post">
 		<input type="hidden" name="L_id" value=<%= S_id %>>
 		<input type="hidden" name="L_id" value=<%= S_pw %>>
 		<button  type="submit" class="btn btn-link"  id="logout">로그아웃</button>
@@ -199,7 +199,7 @@ else if(S_id != null){%><!-- 세션에 id값이 있으면 실행 -->
 		<li>
 		<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">메뉴 <span class="caret"></span></a>
 		  <ul class="dropdown-menu" role="menu">
-		    <li><a href="/proj_01_01/admin/adminpage.jsp">관리자페이지</a></li>
+		    <li><a href="/proj_01_02/admin/adminpage.jsp">관리자페이지</a></li>
 		  </ul>
 		</li>
 	      </ul>
@@ -227,7 +227,7 @@ else if(S_id != null){%><!-- 세션에 id값이 있으면 실행 -->
 	
 		$.ajax({
 			type: "POST",
-			url: "/proj_01_01/ULogin",
+			url: "/proj_01_02/ULogin",
 			data: {
 				"id" : $("#id").val(),
 				"pw": $("#pw").val()
@@ -235,7 +235,7 @@ else if(S_id != null){%><!-- 세션에 id값이 있으면 실행 -->
 			success: function(data) {
 				if(data == "yes") {
 					$("#message").html("<p style='color:green;font-weight:bold'>로그인 성공!</p>");
-					var url = "/proj_01_01/main/main.jsp"; 
+					var url = "/proj_01_02/main/main.jsp"; 
 					$(location).attr('href',url);
 				}
 				else if(data == "no"){

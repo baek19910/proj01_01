@@ -49,7 +49,7 @@ var js$ = jQuery;
 
 											js$.ajax({
 														type : "POST",
-														url : "/proj_01_01/UIdCheck",
+														url : "/proj_01_02/UIdCheck",
 														data : {"id" : js$("#idjoin").val()},
 															
 														success : function(result) {
@@ -78,7 +78,7 @@ var js$ = jQuery;
 
 											js$.ajax({
 														type : "POST",
-														url : "/proj_01_01/UNickCheck",
+														url : "/proj_01_02/UNickCheck",
 														data : {
 															"nickname" : js$("#nickname").val()},
 															
@@ -114,7 +114,7 @@ var js$ = jQuery;
 <body>
 <div class="container">
 
-<form class="form-horizontal" id="joinform" role="form" method="post" name="regFrm" action="/proj_01_01/UjoinS">
+<form class="form-horizontal" id="joinform" role="form" method="post" name="regFrm" action="/proj_01_02/UjoinS">
  <fieldset>
                 <legend style="text-align: center;">회원가입</legend>
                

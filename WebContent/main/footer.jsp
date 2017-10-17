@@ -7,8 +7,8 @@
 <meta name="viewport" content="width=device-width"  initial-scale="1" >
 <title>코딩연습</title>
 
-<link rel="stylesheet" href="/proj_01_01/boot/css/bootstrap.css">
-<link rel="stylesheet" href="/proj_01_01/boot/css/top.css">
+<link rel="stylesheet" href="/proj_01_02/boot/css/bootstrap.css">
+<link rel="stylesheet" href="/proj_01_02/boot/css/top.css">
 <style type="text/css">
 header{
 background-image: url('../images/flower_pattern.jpg');
@@ -23,7 +23,7 @@ color: orange;
 
 
 
-<script src="/proj_01_01/boot/js/bootstrap.js"></script>
+<script src="/proj_01_02/boot/js/bootstrap.js"></script>
 
 <footer>
 

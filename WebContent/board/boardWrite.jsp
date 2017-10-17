@@ -23,7 +23,7 @@
 			</tr>
 		</table>
 		<br />
-		<form name="postFrm" method="post" action="/proj_01_01/BoardAddAction.bo" enctype="multipart/form-data" >
+		<form name="postFrm" method="post" action="/proj_01_02/BoardAddAction.bo" enctype="multipart/form-data" >
 			<table width="80%" cellspacing="0" cellpadding="3" align="center">
 				<tr>
 					<td align=center>

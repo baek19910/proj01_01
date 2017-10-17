@@ -75,7 +75,7 @@ var js$ = jQuery;
 											js$
 													.ajax({
 														type : "POST",
-														url : "/proj_01_01/UIdCheck",
+														url : "/proj_01_02/UIdCheck",
 														data : {
 															"id" : js$(
 																	"#idjoin")
@@ -112,7 +112,7 @@ var js$ = jQuery;
 											js$
 													.ajax({
 														type : "POST",
-														url : "/proj_01_01/UNickCheck",
+														url : "/proj_01_02/UNickCheck",
 														data : {
 															"nickname" : js$(
 																	"#nickname")
@@ -209,7 +209,7 @@ var js$ = jQuery;
 <body>
 <div class="container">
 
-<form class="form-horizontal" id="modifyform" role="form" method="post" name="regFrm" action="/proj_01_01/UModifyS">
+<form class="form-horizontal" id="modifyform" role="form" method="post" name="regFrm" action="/proj_01_02/UModifyS">
  <fieldset>
                 <legend style="text-align: center;">정보수정</legend>
                

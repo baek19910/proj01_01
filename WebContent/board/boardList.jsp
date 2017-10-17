@@ -27,7 +27,7 @@ String keyField = (String) request.getAttribute("keyField");
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width"  initial-scale="1" >
-<link rel="stylesheet" href="/proj_01_01/boot/css/bootstrap.css">
+<link rel="stylesheet" href="/proj_01_02/boot/css/bootstrap.css">
 <style type="text/css">
 #List_table{
 text-align: center;
@@ -45,7 +45,7 @@ border-bottom: 2px solid purple;
 <title>회원목록</title>
 </head>
 
-<script src="/proj_01_01/boot/js/bootstrap.js"></script>
+<script src="/proj_01_02/boot/js/bootstrap.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
 

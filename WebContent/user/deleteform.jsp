@@ -6,12 +6,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width"  initial-scale="1" >
-<link rel="stylesheet" href="/proj_01_01/boot/css/bootstrap.css">
-<link rel="stylesheet" href="/proj_01_01/boot/css/deleteform.css">
+<link rel="stylesheet" href="/proj_01_02/boot/css/bootstrap.css">
+<link rel="stylesheet" href="/proj_01_02/boot/css/deleteform.css">
 
 <title>회원가입</title>
 </head> 
-<script src="/proj_01_01/boot/js/bootstrap.js"></script>
+<script src="/proj_01_02/boot/js/bootstrap.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <body>
 
@@ -30,7 +30,7 @@
 					<div class="panel-body">
 						<div class="row">
 							<div class="col-lg-12">
-								<form id="login-form" action="/proj_01_01/UDeleteS" method="post" role="form" style="display: block;">
+								<form id="login-form" action="/proj_01_02/UDeleteS" method="post" role="form" style="display: block;">
 									<div class="form-group">
 										<input type="text" name="Oid" id="Oid" tabindex="1" class="form-control" placeholder="ID" value="">
 									</div>

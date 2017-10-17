@@ -12,17 +12,17 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width"  initial-scale="1" >
 <title>코딩연습</title>
-<link rel="stylesheet" href="/proj_01_01/boot/css/bootstrap.css"> 
+<link rel="stylesheet" href="/proj_01_02/boot/css/bootstrap.css"> 
 </head>
 <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="/proj_01_01/boot/js/bootstrap.js"></script>
+<script src="/proj_01_02/boot/js/bootstrap.js"></script>
 
 <script type="text/javascript">
 	
 	function read(no, nowPage){
 		document.readFrm2.no.value=no;
 		document.readFrm2.nowPage.value=1;
-		document.readFrm2.action="/proj_01_01/BoardDetailAction.bo";
+		document.readFrm2.action="/proj_01_02/BoardDetailAction.bo";
 		document.readFrm2.submit();
 	}
 
@@ -42,7 +42,7 @@
 <div class="row">
 <div class="col-md-1"></div>
 <div class="col-md-9" style="font-size: 20px; color: olive;">자유게시판</div>
-<div class="col-md-2"><a href="/proj_01_01/BoardListAction.bo"><button class="btn btn-default">+더보기</button></a></div>
+<div class="col-md-2"><a href="/proj_01_02/BoardListAction.bo"><button class="btn btn-default">+더보기</button></a></div>
 </div>
 
 

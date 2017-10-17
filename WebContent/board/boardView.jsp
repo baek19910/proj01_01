@@ -23,7 +23,7 @@ String keyWord = (String) request.getAttribute("keyWord");
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width"  initial-scale="1" >
-<link rel="stylesheet" href="/proj_01_01/boot/css/bootstrap.css">
+<link rel="stylesheet" href="/proj_01_02/boot/css/bootstrap.css">
 <style type="text/css">
 #List_table{
 text-align: center;
@@ -41,11 +41,11 @@ border-bottom: 2px solid purple;
 <title>글읽기</title>
 </head>
 
-<script src="/proj_01_01/boot/js/bootstrap.js"></script>
+<script src="/proj_01_02/boot/js/bootstrap.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 <script type="text/javascript">
 	function list(){
-	 	document.listFrm.action="/proj_01_01/BoardListAction.bo";
+	 	document.listFrm.action="/proj_01_02/BoardListAction.bo";
 	    document.listFrm.submit();
 	 } 
 	
@@ -126,7 +126,7 @@ border-bottom: 2px solid purple;
 <div class=".col-md-4" style="text-align: center;"> [ <a href="javascript:list()" >리스트</a> | 
  <a href="update.jsp?nowPage=<%=nowPage%>&no=<%=num%>" >수 정</a> |
  <a href="reply.jsp?nowPage=<%=nowPage%>&no=<%=num%>">답 변</a> |
- <a href="/proj_01_01/board/boarddelete.jsp?nowPage=<%=nowPage%>&no=<%=num%>">삭 제</a> ]<br>
+ <a href="/proj_01_02/board/boarddelete.jsp?nowPage=<%=nowPage%>&no=<%=num%>">삭 제</a> ]<br>
  </div>
 <div class=".col-md-4"></div>
 </div>
